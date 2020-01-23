@@ -92,10 +92,20 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        width: 70%;
+      }
 
       .btn {
         .btn(@teal);
