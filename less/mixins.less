@@ -1,7 +1,7 @@
 // Mixins in here
 
-.btn-desktop(){
-    background-color: @teal;
+.btn-desktop(@bgcol){
+    background-color: @bgcol;
     color: @white;
     border: solid grey 1px;
     border-radius: 15px;
@@ -13,5 +13,6 @@
 .btn-mobile() {
     background-color: @eastern-blue;
     color: white;
-    border: solid grey .5px;
+    border: solid grey 1px;
+    border-radius: 15px;
 }
