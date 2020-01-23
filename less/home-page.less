@@ -1,5 +1,15 @@
 .home {
 
+  @media @mobile {
+    margin: 2%;
+  }
+
+  h2 {
+    @media @mobile {
+      margin: 2%;
+    }
+  }
+  
   header {
     .headercontent {
       margin-top: 2%;
@@ -11,15 +21,29 @@
     } // closes .headercontent
 
   } // closes header
+
+  .container {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      border: solid red;
+      width: 100;
+      margin: auto;
+    }
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        margin: 1%;
+      }
     }
 
     .img-content {
@@ -31,10 +55,17 @@
       }
     }
   }
-
+  }
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100;
+      margin: auto;
+      margin-bottom: 1%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -68,6 +99,9 @@
 
       .btn {
         .btn(@teal);
+        @media @mobile {
+          .btn(@eastern-blue)
+        }
       }
     } // closes destination
   } // closes content-pick
