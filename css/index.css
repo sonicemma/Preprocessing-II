@@ -168,26 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.funnav {
+.navdiv {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navdiv .funnav {
   display: flex;
   justify-content: center;
   margin-top: 2%;
   margin-bottom: 2%;
   align-items: center;
 }
-.funnav h1 {
+.navdiv .funnav h1 {
   margin-right: 15%;
   font-size: 5rem;
+  color: #212529;
 }
-.funnav .navlinks ul {
+.navdiv .funnav .navlinks ul {
   margin-left: -13%;
   width: 350px;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
 }
-.funnav .navlinks ul a {
-  color: black;
+.navdiv .funnav .navlinks ul a {
+  color: #212529;
   text-decoration: none;
 }
 .footer {
