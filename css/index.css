@@ -262,7 +262,8 @@ img {
   background-color: #008080;
   color: #FFFFFF;
   border: solid grey 1px;
-  border-radius: 6px;
-  font-size: 3rem;
-  padding: 2%;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  padding: 5%;
+  text-align: center;
 }
