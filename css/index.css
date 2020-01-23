@@ -259,8 +259,10 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  background-color: #17A2B8;
+  background-color: #008080;
   color: #FFFFFF;
-  border: solid grey 0.5px;
-  border-radius: 1px;
+  border: solid grey 1px;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 2%;
 }
