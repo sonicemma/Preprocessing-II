@@ -2,32 +2,59 @@
 
 .navdiv {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     border-bottom: 2px dashed @navigation-border;
     
-    .funnav {
+    @media @mobile {
+        border-bottom: 2px dashed @navigation-border;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         margin-top: 2%;
-        margin-bottom: 2%;
-        align-items: center;
+    } // closes media mobile
 
-        h1 {
-            margin-right: 15%;
-            font-size: 5rem;
-            color: @shark;
-        }
-
-        .navlinks ul{
-            margin-left: -13%;
-            width: 350px;
+    .funnav { 
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 800px;
+        margin: 2%;
+        
+        @media @mobile {
             display: flex;
-            justify-content: space-between;
-            font-size: 2rem;
-
-            a {
-                color: @shark;
-                text-decoration: none;
+            flex-direction: column;
+        }
+        h1 {
+            @media @mobile {
+                text-align: center;
             }
-        } // closes .navlinks
+            font-size: 5rem;
+            flex-basis: 60%;
+        } // closes h1
+
+        .navlinks {
+            @media @mobile {
+                display: flex;
+                justify-content: space-between;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+            }
+            display: flex;
+            flex-basis: 40%;
+            width: 50%;
+            justify-content: space-between;
+}
+            a {
+                color: @font-color;
+                text-decoration: none;
+                font-size: 1.5rem;
+                margin: 1%;
+                display: flex;
+                align-items: center;
+
+            }
+        }
     } // closes .funnav
-} // closes navdiv
