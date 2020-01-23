@@ -258,3 +258,9 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border: solid grey 0.5px;
+  border-radius: 1px;
+}
