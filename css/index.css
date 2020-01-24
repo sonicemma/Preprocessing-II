@@ -367,3 +367,9 @@ img {
     text-align: center;
   }
 }
+.home .form {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1%;
+}
